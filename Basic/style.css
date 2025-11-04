@@ -15,13 +15,13 @@ body {
     perspective: 1000px;
 }
 
-div {
+.moon {
     height: 150px;
     width: 150px;
     margin: 100px auto;
     background: #020024;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 61%, rgba(9, 9, 121, 1) 77%, rgba(0, 212, 255, 1) 100%);
-    box-shadow: 10px 10px 20px #ffffff;
+    box-shadow: 10px 10px 20px #979797;
     border-radius: 50%;
     animation: move 10s ease-in-out infinite;
     transform-style: preserve-3d;
@@ -31,11 +31,15 @@ div {
     0% {
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 83%, rgba(22, 60, 82, 1) 89%, rgba(11, 157, 186, 1) 96%, rgba(171, 251, 255, 1) 100%);
+        box-shadow: 6px 6px 12px #8b8b8b,
+            -6px -6px 12px #ffffff;
     }
 
     10% {
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 70%, rgba(22, 60, 82, 1) 83%, rgba(11, 157, 186, 1) 91%, rgba(171, 251, 255, 1) 98%);
+        box-shadow: 5px 5px 76px #5a5a5a,
+            -5px -5px 76px #ffffff;
     }
 
     20% {
@@ -46,16 +50,19 @@ div {
     30% {
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 66%, rgba(22, 60, 82, 1) 74%, rgba(11, 157, 186, 1) 85%, rgba(171, 251, 255, 1) 92%, rgba(255, 255, 255, 1) 99%);
+
     }
 
     40% {
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 51%, rgba(22, 60, 82, 1) 58%, rgba(11, 157, 186, 1) 69%, rgba(171, 251, 255, 1) 89%, rgba(255, 255, 255, 1) 94%);
+
     }
 
     50% {
         background: #000000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 32%, rgba(22, 60, 82, 1) 52%, rgba(11, 157, 186, 1) 66%, rgba(171, 251, 255, 1) 77%, rgba(255, 255, 255, 1) 86%);
+
     }
 
     60% {
@@ -66,20 +73,25 @@ div {
     70% {
         background: #000000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 15%, rgba(22, 60, 82, 1) 29%, rgba(11, 157, 186, 1) 41%, rgba(171, 251, 255, 1) 60%, rgba(255, 255, 255, 1) 74%);
+
     }
 
     80% {
         background: #000000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 15%, rgba(22, 60, 82, 1) 24%, rgba(11, 157, 186, 1) 41%, rgba(171, 251, 255, 1) 50%, rgba(255, 255, 255, 1) 66%, rgba(0, 63, 94, 1) 88%, rgba(18, 21, 61, 1) 95%);
+
     }
 
     90% {
         background: #000000;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(22, 60, 82, 1) 16%, rgba(11, 157, 186, 1) 25%, rgba(171, 251, 255, 1) 31%, rgba(255, 255, 255, 1) 40%, rgba(38, 111, 148, 1) 64%, rgba(18, 21, 61, 1) 75%);
+
     }
 
     100% {
         background: #ffffff;
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 4%, rgba(176, 227, 255, 1) 9%, rgba(38, 111, 148, 1) 18%, rgba(18, 21, 61, 1) 28%);
+        box-shadow: 21px 21px 100px #5a5a5a,
+            -21px -21px 100px #ffffff;
     }
 }
