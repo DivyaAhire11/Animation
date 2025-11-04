@@ -6,6 +6,7 @@
 body {
     height: 100vh;
     position: relative;
+    background-color: black;
 }
 
 .img {
@@ -13,6 +14,7 @@ body {
     width: 100vw;
     object-fit: fill;
     position: absolute;
+    opacity: 0.5;
 }
 
 .same {
@@ -22,6 +24,7 @@ body {
     position: absolute;
     border-radius: 50%;
     animation: blinker 2s ease-in-out infinite;
+    z-index: 11;
 }
 
 .yellow {
@@ -79,10 +82,6 @@ body {
 
 @keyframes blinker {
     0% {
-        opacity: 0.5;
-    }
-
-    50% {
         opacity: 0;
     }
 
